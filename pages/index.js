@@ -23,6 +23,8 @@ const folio = () => {
             </a>
             <a href="gpa.html" className="gpa" target="_blank">GPA CALCULATOR
             </a>
+            <a href={`/post`} className="gpa" target="_blank">FETCHDATA
+            </a>
         </div>
     </header>
 
