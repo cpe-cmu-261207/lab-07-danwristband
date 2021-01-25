@@ -4,6 +4,7 @@ const baseURL = 'https://dummyapi.io/data/api'
 const Home = () => {
   return (
       <h1>This is home page</h1>
+      
   )
 }
 
