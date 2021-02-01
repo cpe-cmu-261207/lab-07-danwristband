@@ -28,24 +28,28 @@ const Post = () => {
     return (
         <>
             
-            <h1 style={{margin:10}}>Posts</h1>
+            <h1  className="header">Posts</h1>
             {post !== null ? (
+                <p style={{maxWidth:2000, textAlign:'center'}} >
                 <div style={{padding:10}}>
-                    <p>Post : {post.text}</p>
-                    <p>Tag : {post.tags}</p>
-                    <p><img src={post.image} width={600}></img> </p>
-
-                    <p><b>PostBy :</b> {post.owner.firstName} {post.owner.lastName}  </p>
+                    <p><b>Post :</b> {post.text}</p>
+                    <p><b>Tag :</b> {post.tags} </p>
+                    <div><b>PostBy :</b> {post.owner.firstName} {post.owner.lastName} <b>likes :</b> {post.likes}</div>
                    
-                    <p><b>likes :</b> {post.likes}</p>
+                   
+                    
+                    <p><img src={post.image} width={600}></img> </p>
+                    <div><b>Comment</b>
+</div>
                     
                 
-                </div>
+                </div></p>
             ):null}
     
                 {comment.map(comment => (
+                     <p style={{maxWidth:2000, textAlign:'center'}} >
 
-<div style={{padding:10}}>
+<div >
     
                                 <div key={comment.id}>
                                     
@@ -55,7 +59,7 @@ const Post = () => {
                                     
                 
                                 </div>
-                                </div>
+                                </div></p>
 
                         ))}
 
@@ -65,7 +69,8 @@ const Post = () => {
 
 
             <Link href={`/post`}>
-            <button style={{margin:10}}>Go to this post</button>
+                <p style={{maxWidth:2000, textAlign:'center'}}>
+            <button style={{margin:10}}>Go to this post</button></p>
             </Link>
         </>
     )

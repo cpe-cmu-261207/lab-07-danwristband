@@ -21,16 +21,16 @@ const Posts = () => {
     useEffect(()=>{fetchData()},[]);
     return (
         <>
-            <h1>All Posts</h1>
+            <h1 className="header">All Posts</h1>
             <ul>
                     {
                         posts.map(post => (
 
                             <Link  key={post.id} href={`/post/${post.id}`}>
                                 <p style={{maxWidth:2000, textAlign:'center'}} >
-                                    post : {post.text}<br></br>
+                                    <b>Post :</b> {post.text}<br></br>
                                    <p><img src={post.image} width={600}></img> </p>
-                                    <p> likes: {post.likes} <button style={{margin:10}}>Go to this post</button></p>
+                                    <p> <b>likes:</b> {post.likes} <button style={{margin:10}}>Go to this post</button></p>
                                     
                                     <br></br>
                                 </p>

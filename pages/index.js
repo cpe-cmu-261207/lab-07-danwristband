@@ -15,21 +15,21 @@ const folio = () => {
       <div>
           <header className="header">
         <div className="menu">
-            <a href="" className="home">HOME
+            <a href='' className="home">HOME
             </a>
-            <a href="gallory.html" className="gallory">GALLORY
+            <a href={`/post/gallory`} className="gallory">GALLORY
             </a>
-            <a href="contact.html" className="contact">CONTACT
+            <a href={`/post/contact`} className="contact">CONTACT
             </a>
-            <a href="gpa.html" className="gpa" target="_blank">GPA CALCULATOR
+            <a href={`/post/gpacal`} className="gpa" >GPA CALCULATOR
             </a>
-            <a href={`/post`} className="gpa" target="_blank">FETCHDATA
+            <a href={`/post`} className="gpa" >FETCHDATA
             </a>
         </div>
     </header>
 
     <div className="PICHEAD">
-        <img src="photo/Proflie.JPG"
+        <img src="photo/sen.PNG"
             width="30" height="30" className="d-inline-block align-top" alt=""></img>
     </div>
 
